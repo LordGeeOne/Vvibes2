@@ -1,0 +1,158 @@
+/* Header for the dashboard */
+.dashboard-header {
+    /display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between the title and buttons */
+    position: fixed; /* Fix the header to the top */
+    top: 0; /* Align it to the top of the viewport */
+    left: 0; /* Align it to the left of the viewport */
+    width: 100%; /* Make it full width */
+    background-color: #343a40; /* Dark gray background */
+    color: #fff;
+    padding: 10px 20px; /* Increased padding for better spacing */
+    font-size: 2.5rem;
+    font-weight: bold;
+    z-index: 1000; /* Ensure it's above other content */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Adjust the container to account for the fixed header and ensure scrolling */
+  .dashboard-container {
+    padding: 100px 20px 20px; /* Add top padding to avoid overlap with the header */
+    background-color: #f8f9fa; /* Light gray background for the container */
+    width: 100%; /* Ensure it takes up full width */
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow: auto; /* Allow scrolling if content overflows */
+    position: relative; /* Ensure positioning is relative to allow scrolling */
+    margin: 0; /* Remove any unwanted margin */
+  }
+  
+  /* Title for the dashboard */
+  .dashboard-title {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #343a40; /* Dark gray color */
+  }
+  
+  /* Button for navigating to the profile page */
+  .header-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff; /* Primary blue */
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 0 10px; /* Space between buttons */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .header-button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+  }
+  /* Container for each user card */
+  .candidate-card {
+    background-color: #fdcaca; /* White background */
+    border: 8px solid #061322; /* Blue border */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px; /* Space between elements */
+    margin: 0 auto; /* Center the card */
+    max-width: 500px; /* Max width for the card */
+  }
+  
+  /* User profile picture */
+  .dashboard .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+
+
+  .input-box {
+    border: 1px solid #061322; /* Blue border */
+    border-radius: 1px; /* Rounded corners */
+    padding: 8px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0., 0.2); /* More pronounced shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px; /* Space between elements */
+    margin: 0 auto; /* Center the card */
+    max-width: 500px; /* Max width for the card */
+  }
+  
+  /* User details section */
+  .candidate-details {
+    text-align: center;
+  }
+  
+  .candidate-name {
+    font-size: 2rem;
+    margin: 0;
+    color: #212529; /* Darker text color */
+  }
+  
+  .candidate-age {
+    font-size: 1.9rem;
+    color: #060f16; /* Lighter gray for age text */
+  }
+  
+  /* Container for action buttons */
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center; /* Center buttons horizontally */
+  }
+  
+  .action-button {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .smash-button {
+    background-color: #fd7e14; /* Orange */
+  }
+  
+  .date-button {
+    background-color: #28a745; /* Green */
+  }
+  
+  .pass-button {
+    background-color: #dc3545; /* Red */
+  }
+  
+  .action-button:hover {
+    opacity: 0.9; /* Slightly reduced opacity on hover */
+  }
+  
+  /* Feedback message styling */
+  .feedback-message {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .feedback-message.success {
+    color: #28a745 !important; /* Green for success messages */
+  }
+  
+  .feedback-message.error {
+    color: #dc3545 !important; /* Red for error messages */
+  }
+  

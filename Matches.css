@@ -1,0 +1,24 @@
+.matches-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .match-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .match-user-details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .match-profile-picture {
+    width: 100px;
+    height: 100px;
+  }
